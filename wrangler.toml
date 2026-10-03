@@ -1,0 +1,19 @@
+name = "director"
+main = "index.js"
+compatibility_date = "2026-10-03"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+GEMINI_MODEL = "gemini-3.5-flash-lite"
+
+[assets]
+directory = "."
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lidire-mvp-db"
+database_id = "1a095fd7-b0a0-4b83-b610-1b3a43fbb716"
+
+[triggers]
+crons = ["* * * * *"]
